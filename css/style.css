@@ -1113,6 +1113,153 @@
      font-weight: normal;
      color: #000;
 }
+/* pricing section */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .pricing {
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .pricing-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 8px 16px 0px rgba(0, 0, 0, 0.1);
+    margin-left: 50px;
+  }
+  
+  .pricing-card-heading {
+    padding: 10px;
+    font-size: 20px;
+    line-height: 24px;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .pricing-card-heading-free {
+    background-color: #f8fafe;
+    color: #000;
+  }
+  
+  .pricing-card-heading-lite {
+    background: linear-gradient(
+      90deg,
+      rgba(194, 209, 255, 1) 0%,
+      rgba(179, 114, 254, 1) 100%
+    );
+    color: #fff;
+  }
+  
+  .pricing-card-heading-pro {
+    background: linear-gradient(
+      90deg,
+      rgba(255, 177, 195, 1) 0%,
+      rgba(255, 203, 112, 1) 100%
+    );
+    color: #fff;
+  }
+  
+  .pricing-card-list {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    margin: 25px 0 45px 65px;
+  }
+  
+  .pricing-card-list-item {
+    position: relative;
+  }
+  
+  .icon-yes::before {
+    position: absolute;
+    left: -30px;
+    top: -5px;
+    display: inline-block;
+    content: "";
+    width: 20px;
+    height: 25px;
+    background: url("https://cdnjs.cloudflare.com/ajax/libs/open-iconic/1.1.1/png/check-4x.png")
+      no-repeat;
+    background-size: 15px;
+    background-position: bottom center;
+    filter: invert(75%) sepia(27%) saturate(459%) hue-rotate(76deg)
+      brightness(90%) contrast(88%);
+  }
+  
+  .icon-no::before {
+    position: absolute;
+    left: -27px;
+    top: -5px;
+    display: inline-block;
+    content: "";
+    width: 20px;
+    height: 25px;
+    background: url("https://cdnjs.cloudflare.com/ajax/libs/open-iconic/1.1.1/png/plus-4x.png")
+      no-repeat;
+    background-size: 15px;
+    background-position: bottom center;
+    filter: invert(45%) sepia(88%) saturate(908%) hue-rotate(312deg)
+      brightness(90%) contrast(86%);
+    transform: rotate(45deg);
+  }
+  
+  .icon-no {
+    color: #999;
+    text-decoration: line-through;
+  }
+  
+  .pricing-card-btn {
+    width: 85%;
+    font-size: 16px;
+    padding: 15px;
+    margin-left: 7.5%;
+    border: 1px solid #27264b;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #27264b;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background-color 250ms ease-in-out;
+  }
+  
+  .pricing-card-btn:hover {
+    background-color: rgb(228, 228, 240);
+  }
+  
+  .pricing-card-highlight .pricing-card-btn {
+    border: none;
+    color: #fff;
+    background-color: #27264b;
+  }
+  
+  .pricing-card-highlight .pricing-card-btn:hover {
+    background-color: #9390db;
+  }
+  
+  .pricing-card-price {
+    text-align: center;
+    font-size: 28px;
+    line-height: 28px;
+    font-weight: 500;
+    margin-bottom: 15px;
+  }
+  
+  .pricing-card-price-text {
+    font-weight: 400;
+    font-size: 20px;
+  }
+/* product section */
 /** how_it section **/
  .margin_bottom {
     margin-bottom: 35px;
@@ -1292,67 +1439,7 @@ border: #fff solid 1px;
 color: #f00;
 }
 /** end contact section **/
-/** testimonial **/
- .testimonial {
-     background: #fff;
-     margin-top: 85px;
-}
- .titlepage {
-    text-align: center;
-     padding-bottom: 60px;
-}
- .titlepage h2 {
-     padding: 0;
-     font-weight: 500;
-     color: #000;
-     line-height: 50px;
-     font-size: 50px;
-}
- .testimonial_box {
-    text-align: center;
-}
- .testimonial_box figure {
-    margin: 0;
-}
- .box {
-     display: flex;
-     align-items: center;
-     flex-wrap: wrap;
-     text-align: center;
-}
- .testimonial .clients_box {
-     text-align: center;
-}
- .testimonial .clients_box {
-     border-radius: 20px;
-     text-align: center;
-}
- .testimonial .clients_box h3 {
-     padding-top: 20px;
-     font-size: 29px;
-     line-height: 30px;
-     color: #000;
-     font-weight: 500;
-     border-bottom: #000 solid 1px;
-     width: 104px;
-     display: inline-block;
-     padding-bottom: 5px;
-     margin-bottom: 15px;
-}
- .testimonial .clients_box p {
-     color: #000;
-     font-size: 17px;
-     line-height: 28px;
-     font-weight: 400;
-     color: #1a1a1b;
-}
- .testimonial .clients_box span {
-     color: #6e6e6e;
-     font-size: 16px;
-     padding-bottom: 5px;
-     display: inline-block;
-}
-/** end testimonial **/
+
 /** footer **/
  .footer {
      background: #181716;
